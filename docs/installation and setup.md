@@ -24,6 +24,8 @@ Cmd+Shift+X -> Search for above extensions to install.
 ```
 
 ### devcontainer.json for docker
+This file should reside under folder .devcontainer in your project folder
+
 ```
 {
 	"name": "Rust",
