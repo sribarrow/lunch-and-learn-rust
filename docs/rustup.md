@@ -1,3 +1,36 @@
+<b>Rustup</b> is the Official Toolchain installer. It serves as a unified way to install, manage and maintain 
+different versions of the Rust compiler and its associated tools.
+
+### Rust Analyzer
+for code analysis
+- Code completion
+- Error detection
+- Code navigation
+- doc lookup
+
+
+### Components of a toolchain
+- rustc -> compiler
+- cargo -> package manager and build tool
+- rustdoc -> Documentation generator
+- Optional components
+    - rustfmt -> Code Formatter
+    - clippy -> linter
+    - miri -> undefined behaviour checks
+    - Editor support tools
+
+### profiles
+Group of components that can be installed as part of the toolchain
+- minimal -> installs basic components such as rust-c, rust-std and cargo (recommended for windows)
+- default -> All components of minimal plus rust-docs, clippy and rustfmt
+- complete -> all components available through rustup
+```
+rustup set profile minimal
+OR
+rustup install --profile <name>
+```
+
+
 ### Update Rust to latest version
 ```
 rustup update
