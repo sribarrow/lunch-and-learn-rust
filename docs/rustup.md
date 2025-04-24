@@ -30,7 +30,6 @@ OR
 rustup install --profile <name>
 ```
 
-
 ### Update Rust to latest version
 ```
 rustup update
