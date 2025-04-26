@@ -26,7 +26,7 @@
     }
 ```
 #### Ownership
-At a given time there can only be one owner. A variable owns value until it is in scope {}. Once out of scope the memory is freed and the value dropped. This is how Rust manages memory without a garbage collector.
+At a given time there can only be one owner. Once out of scope the memory is freed and the value dropped. This is how Rust manages memory without a garbage collector.
 
 #### Stack
 For all primitive datatypes, memory is allocated in stack. For variable to be stored in a stack, the compiler should know the size of the variable. Stack operates on Last In First Out (LIFO) and is very fast.
