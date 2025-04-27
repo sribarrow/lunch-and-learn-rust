@@ -19,5 +19,3 @@ ___
 - Floats are numbers with decimal points
 - Floats are of type f32 and f64
 - Default is f64
-
-####
