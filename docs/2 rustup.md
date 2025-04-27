@@ -1,5 +1,6 @@
-<b>Rustup</b> is the Official Toolchain installer. It serves as a unified way to install, manage and maintain 
-different versions of the Rust compiler and its associated tools.
+# Rustup - the Official Toolchain installer. 
+
+It serves as a unified way to install, manage and maintain different versions of the Rust compiler and its associated tools.
 
 ### Rust Analyzer
 for code analysis

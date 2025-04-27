@@ -1,3 +1,5 @@
+# Setup and Installation Guide
+
 ### Install rust
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -41,7 +43,7 @@ This file should be in vscode workspace which is under .vscode/
 ```
 ### devcontainer.json for docker
 This file should reside under folder .devcontainer in your project folder. This requires
-- Install vscode extension for devcontainer.
+- installation of vscode extension for devcontainer.
 - Docker Desktop for mac or windows.
 
 ```

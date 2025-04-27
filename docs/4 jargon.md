@@ -1,3 +1,4 @@
+# Rust Vocabulary
 #### Tuples
 - A compound data type in Rust that group a collection of related items.
 - Tuples can hold a mix of data types (unlike arrays)
