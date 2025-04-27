@@ -47,11 +47,18 @@ Below is an example of Move where sa is freed after the operation.
     let sb = sa;
 ```
 #### Clone
-By default, Rust does not copy heap data. To make a deep copy (i.e., to copy both stack and heap), we can use the clone. Below will have different memory address for sa and sb.
+By default, Rust does not copy heap data. To make a deep copy (i.e., to copy both stack and heap), we can use clone. Below will have different memory address for sa and sb.
 ```
     let sa = String::from("Learning Rust")
     let sb = sa.clone();
 ```
 #### Reference or Borrowing
-Reference is the way of passing variable without taking ownership by passing the value by pointer reference to the address of the value. When a value stored on heap is passed as argument to a function, the original variable goes out of scope. If the original value should still be valid, we pass the &variable and this is called Borrowing.
+Reference is the way of passing variable without taking ownership. Here the pointer/reference to the address of the value is passed. When a value stored on heap is passed as argument to a function, the original variable goes out of scope. If the original value should still be valid, we pass the &variable (reference) and this is called Borrowing.
 
+#### Package
+A package is the project in Rust. Its created using the command `cargo new package_name`. By default a package is created as binary. We can explicitly create a binary crate by using `cargo new --bin package_name`. To create a library crate use `cargo new --lib package_name`. A package must contain `cargo.toml`
+
+#### Crate
+It is the smallest compilable unit in Rust. A binary crate contains the fn main(), whereas a library crate doesn't.
+
+#### 

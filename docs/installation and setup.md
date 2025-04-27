@@ -40,7 +40,9 @@ This file should be in vscode workspace which is under .vscode/
 }
 ```
 ### devcontainer.json for docker
-This file should reside under folder .devcontainer in your project folder
+This file should reside under folder .devcontainer in your project folder. This requires
+- Install vscode extension for devcontainer.
+- Docker Desktop for mac or windows.
 
 ```
 {

@@ -1,5 +1,12 @@
 # lunch-and-learn-rust
 
+#### Books and Useful Links
+1. [Rust official documentation] (https://doc.rust-lang.org/stable/)
+2. [The Rust Programming Language] (https://doc.rust-lang.org/stable/book/index.html)
+3. [Rust By Example] (https://doc.rust-lang.org/stable/rust-by-example/index.html)
+4. [Rust Cookbook] (https://rust-lang-nursery.github.io/rust-cookbook/)
+4. [Rust Playground] (https://play.rust-lang.org/)
+
 #### Task 1 - 
 
 Exercise: Create a Contact struct with fields for name, email, and phone number.
@@ -37,3 +44,4 @@ Exercise: Password Strength Checker
 
 Concepts: Pattern matching, string manipulation
 Goal: Input a password and score its strength based on length, characters, etc.
+

@@ -23,4 +23,7 @@ cargo check
 cargo clean
 ```
 ### Config for cargo
-Tom's obvious minimal Language(TOML)
+`cargo.toml` (TOML stands for Tom's obvious minimal Language)
+[Refer to] (https://doc.rust-lang.org/cargo/reference/manifest.html) 
+
+
