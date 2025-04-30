@@ -19,7 +19,7 @@ May 9 2025
 #### Task 1 - 
 
 Exercise: Create a Contact struct with fields for name, email, and phone number.
-Concepts: Structs, file I/O, file R/W
+Concepts: Structs, file I/O, file R/W.
 Goal:
 1. Creates a list of contacts.
 2. Saves them to a file in a simple format (e.g., CSV).
