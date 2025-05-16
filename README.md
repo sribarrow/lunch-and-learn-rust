@@ -21,7 +21,7 @@
     2. Search the path for files with pattern
     3. Print path of files that contain pattern.
 - Code Base:
-    - working_with_cli
+    - 2025-05-16/working_with_cli
 
 #### Task 2 -
 
