@@ -11,7 +11,7 @@
 2. [The Rust Programming Language] (https://doc.rust-lang.org/stable/book/index.html)
 3. [Rust Playground] (https://play.rust-lang.org/)
 4. [Rustlings] (http://github.com/rust-lang/rustlings/?tab=readme-ov-file#installing-rustlings)
-5. [Rust learn] (rust-lang.org/learn)
+5. [Rust learn] (https://rust-lang.org/learn)
 
 #### Task 1 -  (16 May 2025)
 - Exercise: Use standard libraries to take path and pattern from user. Search the path and return files that contain pattern
