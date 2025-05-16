@@ -2,6 +2,8 @@
 
 #### Next Planned Session 
 May 9 2025
+May 23 2025
+Jun 13 2025
 
 #### Why Rust
 - [Popularity Chart] (https://pypl.github.io/PYPL.html)
@@ -13,6 +15,7 @@ May 9 2025
 1. [Rust official documentation] (https://doc.rust-lang.org/stable/)
 2. [The Rust Programming Language] (https://doc.rust-lang.org/stable/book/index.html)
 3. [Rust Playground] (https://play.rust-lang.org/)
+4. [Rustlings] (https://github.com/rust-lang/rustlings/?tab=readme-ov-file#installing-rustlings)
 
 #### Task 1 - 
 

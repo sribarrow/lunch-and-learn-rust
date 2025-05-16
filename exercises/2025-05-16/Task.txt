@@ -1,0 +1,13 @@
+Task:
+Take arguments - text and path - as input from CLI and list files that contain text
+
+1. Gather CLI arguments
+2. Extract inputs
+3. Construct the Cli struct
+4. Print for arguments
+
+1. Read the directory
+2. Iterate entries
+3. Recurse into subdirectories
+4. Process files
+5. Finish successfully
