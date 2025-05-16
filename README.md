@@ -1,10 +1,5 @@
 # lunch-and-learn-rust
 
-#### Next Planned Session 
-May 9 2025
-May 23 2025
-Jun 13 2025
-
 #### Why Rust
 - [Popularity Chart] (https://pypl.github.io/PYPL.html)
 - [Why is Rust the most admired language among developers] (https://github.blog/developer-skills/programming-languages-and-frameworks/why-rust-is-the-most-admired-language-among-developers/)
