@@ -15,7 +15,7 @@
 
 #### Task 1 -  (16 May 2025)
 - Exercise: Use standard libraries to take path and pattern from user. Search the path and return files that contain pattern
-- Concepts: Structs, file I/O, file Read
+- Concepts: Structs, I/O, file Read
 - Goal:
     1. Take 2 arguments pattern and path as input from CLI.
     2. Search the path for files with pattern
