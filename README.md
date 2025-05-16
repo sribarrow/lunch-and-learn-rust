@@ -13,8 +13,18 @@ May 9 2025
 1. [Rust official documentation] (https://doc.rust-lang.org/stable/)
 2. [The Rust Programming Language] (https://doc.rust-lang.org/stable/book/index.html)
 3. [Rust Playground] (https://play.rust-lang.org/)
+4. [Rustlings] (http://github.com/rust-lang/rustlings/?tab=readme-ov-file#installing-rustlings)
+5. [Rust learn] (rust-lang.org/learn)
 
-#### Task 1 - 
+#### Task 1 -  (16 May 2025)
+- Exercise: Use standard libraries to take path and pattern from user. Search the path and return files that contain pattern
+- Concepts: Structs, file I/O, file Read
+- Goal:
+    1. Take 2 arguments pattern and path as input from CLI.
+    2. Search the path for files with pattern
+    3. Print path of files that contain pattern.
+
+#### Task 2 -
 
 - Exercise: Create a Contact struct with fields for name, email, and phone number.
 - Concepts: Structs, file I/O, file R/W.
@@ -23,7 +33,7 @@ May 9 2025
     2. Saves them to a file in a simple format (e.g., CSV).
     3. Reads the file back and rebuilds the list of contacts.
 
-#### Task 2 - 
+#### Task 3 - 
 
 - Exercise: Build a Simple CLI To-Do App
 - Concepts: Structs, enums, file I/O, CLI args
@@ -31,7 +41,7 @@ May 9 2025
 - Goal: 
     Add, list, and mark tasks as done from the command line
 
-#### Task 3 - 
+#### Task 4 - 
 - Exercise: JSON API Fetcher
 
 Concepts: HTTP requests, async/await, error handling
@@ -39,7 +49,7 @@ Libraries: request, tokio, serde
 Goal: 
 Fetch and parse data from a public API (like JSONPlaceholder or a crypto price feed)
 
-#### Task 4 - 
+#### Task 5 - 
 
 Exercise: CSV Processor with AWS Lambda
 
@@ -48,7 +58,7 @@ Libraries: csv, serde
 Goal: 
 Read a CSV, transform it (e.g. filter rows), and write to a new file
 
-#### Task 5 -
+#### Task 6 -
 
 Exercise: Password Strength Checker with AWS Lambda and API Gateway
 
