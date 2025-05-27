@@ -73,3 +73,15 @@ A package is the project in Rust. Its created using the command `cargo new packa
 
 #### Crate
 It is the smallest compilable unit in Rust. A binary crate contains the fn main(), whereas a library crate doesn't.
+
+#### Prelude
+The Rust prelude contains several items that are frequently used and make programming in Rust more convenient. These include, for example:
+- Standard Traits like Clone, Copy, Debug, Eq, PartialEq, Ord, PartialOrd, Drop, and Default.
+- Common Types like Option, Result, and String.
+- Common Functions like println!, format!, vec!, etc.
+- Basic Types like i32, f64, bool, etc.
+
+
+Click (here) [https://doc.rust-lang.org/std/prelude/index.html#prelude-contents] for more. 
+
+**You don't have to explicitly import these items because they are part of the prelude**
