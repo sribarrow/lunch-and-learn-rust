@@ -19,9 +19,10 @@ pub fn reverse_string(s: &str) -> String {
     s.chars().rev().collect()
 }
 
-#[cfg(test)]
+#[cfg(test)] // tells compiler to only compile below this when cargo test is run
 mod tests {
-    use super::*;
+    // isolate tests into separate namespace
+    use super::*; // bring to scope all public functions from parent module
 
     #[test]
     fn it_works() {
