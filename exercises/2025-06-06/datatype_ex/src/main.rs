@@ -26,44 +26,30 @@ fn main() {
     print_type_of(&b);
 
     // type inference
-    // let c: i32 = (a + /* just playing with comments */ b).try_into().unwrap(); Only safe when you're absolutely sure
-    // If you want to provide a default value when conversion fails:
-    // let c: i32 = (a + /* just playing with comments */ b)
-    //     .try_into()
-    //     .unwrap_or(0); You have a reasonable default
-    let c: i32 = (a + /* just playing with comments */ b)
+    let c: i32 = (a + /* just playing with comments */ b).try_into().unwrap(); // Only safe when you're absolutely sure
+                                                                               // If you want to provide a default value when conversion fails:
+    let d: u8 = (a + /* just playing with comments */ b)
         .try_into()
-        .unwrap_or_else(|e| {
+        .unwrap_or(0); //You have a reasonable default
+    let x: i8 = (a + /* just playing with comments */ b)
+        .try_into()
+        .unwrap_or_else(|x| {
             //You want logic + default
-            eprintln!("Conversion failed: {}", e);
+            eprintln!("Conversion failed: {}", x);
             -1 // fallback value
         });
-    print_type_of(&c);
 
-    let x: u16 = 5;
-    println!("The value of x = {}", x);
-    let y /* rust expected to make this u16 */= 10;
-    // println!("The value of x = {}", x);
-    let z = /* Because x is set to u16, the variables in operation become u16*/ x + y;
-    print_type_of(&x);
-    print_type_of(&y);
-    print_type_of(&z);
-    println!("Size of u8 is {} bytes", std::mem::size_of::<u8>());
-    println!("Size of u16 is {} bytes", std::mem::size_of::<u16>());
-    println!("Size of u32 is {} bytes", std::mem::size_of::<u32>());
+    println!("unwrapped {}, {}, {}", c, d, x)
 
-    // strings
-    // String is owned and growable
     let mut my_name: String = "Sri".to_string();
-    // let mut my_name = String::from("Sri");
-    // let mut my_name = "Sri".to_string(); // owned string
+    // let mut my_name = String::from("Sri"); alternative method
+    // let mut my_name = "Sri".to_string(); // owned string. alternative method
     println!("{}", my_name);
     my_name.push_str(" Barrow");
     println!("{}", my_name);
     // num as char
     let my_number1 = 100;
-    // println!("{}", my_number as char);
-    // Casts the number to an 8-bit unsigned integer.
+    // Cast the number to an 8-bit unsigned integer.
     // Then it casts the u8 value into a Unicode character (char).
     println!("1. {}", my_number1 as u8 as char);
 
@@ -93,7 +79,7 @@ fn main() {
     println!("9. {:?}", "𓀇".as_bytes());
     println!("10. Size of Emoji 🤣:  {}", "🤣".len());
     println!("11. {:?}", "🤣".as_bytes());
-    // ***************
+    // other acceptable variable definitions
     let num1 = 10u8;
     let num2 = 10_u8;
     let num3 = 100_000____i32;
@@ -104,12 +90,6 @@ fn main() {
     );
     let my_float = 5.;
     print_type_of(&my_float);
-
-    multiply(8, 9);
-    // print_type_of(&x);
-    // print_type_of(&y);
-    multiply(x as u32, y.into());
-
     let a_number = {
         let second_number = 11;
         second_number + 10
@@ -121,9 +101,4 @@ fn main() {
     println!("u8: Smallest: {}, Biggest {}", u8::MIN, u8::MAX);
     println!("i16: Smallest: {}, Biggest {}", i16::MIN, i16::MAX);
     println!("u16: Smallest: {}, Biggest {}", u16::MIN, u16::MAX);
-
-    // mutability
-    let mut xy = 8;
-    xy = 10 - xy;
-    println!("xy: {}", xy)
 }
