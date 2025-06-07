@@ -1,19 +1,3 @@
-/*
-Function can take <T> declared a generic type parameter
-
-fn — declares a function named print_type_of.
-
-<T> — declares a generic type parameter named T.
-
-(_: &T) — means the function takes a reference to a value of any type, but doesn't use the value itself (_ is the unused variable placeholder).
-*/
-// fn print_type_of<T>(_: &T) {
-//     println!(
-//         "{}",
-//         std::any::type_name::/* here <T> is whatever was passed to the function */<T>()
-//     );
-// }
-
 fn print_type_of<T: std::fmt::Debug>(val: &T) {
     println!("Value: {:?}, Type: {}", val, std::any::type_name::<T>());
 }
@@ -27,11 +11,10 @@ fn main() {
 
     // type inference
     let c: i32 = (a + /* just playing with comments */ b).try_into().unwrap(); // Only safe when you're absolutely sure
-                                                                               // If you want to provide a default value when conversion fails:
-    let d: u8 = (a + /* just playing with comments */ b)
+    let d: u8 = (a + b)
         .try_into()
         .unwrap_or(0); //You have a reasonable default
-    let x: i8 = (a + /* just playing with comments */ b)
+    let x: i8 = (a + b)
         .try_into()
         .unwrap_or_else(|x| {
             //You want logic + default
