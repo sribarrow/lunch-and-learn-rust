@@ -18,11 +18,6 @@ fn print_type_of<T: std::fmt::Debug>(val: &T) {
     println!("Value: {:?}, Type: {}", val, std::any::type_name::<T>());
 }
 
-// fn multiply(first_num: u32, second_num: u32) {
-//     let result = first_num * second_num;
-//     println!("{} times {} is {}", first_num, second_num, result);
-// }
-
 fn main() {
     // magic with integers
     let a = 1; // no type annotation
