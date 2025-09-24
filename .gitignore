@@ -15,6 +15,9 @@
   # OS files
   .DS_Store
   Thumbs.db
+  .venv/
+  env/
+  venv/
   
   # IDEs and editors
   .idea/
@@ -33,3 +36,14 @@
   # Documentation output
   /book/
   /target/doc/
+  # Python venvs (recursive)
+  .venv/
+  venv/
+  env/
+  **/.venv/
+  **/venv/
+  **/env/
+
+  # Rust targets (recursive)
+  target/
+  **/target/

@@ -5,6 +5,13 @@
 	"image": "mcr.microsoft.com/devcontainers/rust:1-1-bullseye",
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
+	// Add Python alongside Rust
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {
+			"version": "3.12",
+			"installTools": true // adds pip, venv helpers, etc.
+		}
+	},
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
